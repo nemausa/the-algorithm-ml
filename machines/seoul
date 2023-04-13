@@ -116,61 +116,61 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {"type":"vmess","name":"Seoul","ws-opts":{"path":"/ATbfGPf7V55","headers":{"host":"yun.nemausa.top"}},"server":"158.247.200.255","port":"443","uuid":"7a279bca-5592-4e1a-95bc-fb46c2c25918","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"HongKong","ws-opts":{"path":"/ULd3VX2B2X","headers":{"host":"pan.nemausa.top"}},"server":"38.47.108.245","port":"50000","uuid":"537d4fcd-e043-471f-a8ee-1d7ab56d9f05","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"Japan","ws-opts":{"path":"/3dBfADHuxWwz","headers":{"host":"pan.nemausa.top"}},"server":"38.47.110.86","port":"443","uuid":"7dde5021-a01a-4b8f-84cc-ca1d5501b2cd","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"韩国","ws-opts":{"path":"/ATbfGPf7V55","headers":{"host":"yun.nemausa.top"}},"server":"158.247.200.255","port":"443","uuid":"7a279bca-5592-4e1a-95bc-fb46c2c25918","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"香港","ws-opts":{"path":"/ULd3VX2B2X","headers":{"host":"pan.nemausa.top"}},"server":"38.47.108.245","port":"50000","uuid":"537d4fcd-e043-471f-a8ee-1d7ab56d9f05","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"日本","ws-opts":{"path":"/3dBfADHuxWwz","headers":{"host":"pan.nemausa.top"}},"server":"38.47.110.86","port":"443","uuid":"7dde5021-a01a-4b8f-84cc-ca1d5501b2cd","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
     type: select
     proxies:
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
 
   - name: 🍎 Apple
     type: select
     proxies:
       - DIRECT
       - GuGuEX
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
   - name: 📲 Telegram
     type: select
     proxies:
       - GuGuEX
       - DIRECT
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
   - name: 🎬 YouTube
     type: select
     proxies:
       - GuGuEX
       - DIRECT
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
   - name: 🎬 Bilibili
     type: select
     proxies:
       - DIRECT
       - GuGuEX
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
   - name: 🎬 myTVSUPER
     type: select
     proxies:
       - GuGuEX
       - DIRECT
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
       
   - name: 📲 LineTV
@@ -178,9 +178,9 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
       
   - name: 🎬 iQiyi
@@ -188,9 +188,9 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
       
   - name: 🎵 Tiktok
@@ -198,9 +198,9 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
      
   - name: 📺 Netflix
@@ -208,9 +208,9 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
       
   - name: 🌐 Google
@@ -218,9 +218,9 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
       
   - name: 🖥 Microsoft
@@ -229,9 +229,9 @@ proxy-groups:
       - GuGuEX
       - DIRECT
     
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
       
   - name: 📟 Twitter
@@ -240,9 +240,9 @@ proxy-groups:
       - GuGuEX
       - DIRECT
     
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
       
   - name: 📺 International-Media
@@ -251,9 +251,9 @@ proxy-groups:
       - GuGuEX
       - DIRECT
     
-      - Seoul
-      - HongKong
-      - Japan
+      - 韩国
+      - 香港
+      - 日本
  
       
   - name: China-Media
@@ -1302,7 +1302,7 @@ rules:
   - DOMAIN-SUFFIX,ipfs.io,Final
   - DOMAIN-SUFFIX,issuu.com,Final
   - DOMAIN-SUFFIX,istockphoto.com,Final
-  - DOMAIN-SUFFIX,japantimes.co.jp,Final
+  - DOMAIN-SUFFIX,日本times.co.jp,Final
   - DOMAIN-SUFFIX,jiji.com,Final
   - DOMAIN-SUFFIX,jinx.com,Final
   - DOMAIN-SUFFIX,jkforum.net,Final
@@ -1596,7 +1596,7 @@ rules:
   - DOMAIN-SUFFIX,hk-pub.com,Final
   - DOMAIN-SUFFIX,hosting.co.uk,Final
   - DOMAIN-SUFFIX,hwcdn.net,Final
-  - DOMAIN-SUFFIX,iphone4hongkong.com,Final
+  - DOMAIN-SUFFIX,iphone4香港.com,Final
   - DOMAIN-SUFFIX,iphonetaiwan.org,Final
   - DOMAIN-SUFFIX,iptvbin.com,Final
   - DOMAIN-SUFFIX,jtvnw.net,Final
