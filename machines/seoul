@@ -116,14 +116,14 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  # - {"type":"vmess","name":"韩国","ws-opts":{"path":"/ATbfGPf7V55","headers":{"host":"yun.nemausa.top"}},"server":"158.247.200.255","port":"443","uuid":"7a279bca-5592-4e1a-95bc-fb46c2c25918","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"韩国","ws-opts":{"path":"/4qBenn06TLE","headers":{"host":"blog.nemausa.top"}},"server":"158.247.200.255","port":"50000","uuid":"04d4e9c8-6e15-4749-a522-17f88e1e8108","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"香港","ws-opts":{"path":"/ULd3VX2B2X","headers":{"host":"pan.nemausa.top"}},"server":"38.47.108.245","port":"50000","uuid":"537d4fcd-e043-471f-a8ee-1d7ab56d9f05","alterId":"0","cipher":"auto","network":"ws","tls":true}
 #  - {"type":"vmess","name":"日本","ws-opts":{"path":"/3dBfADHuxWwz","headers":{"host":"pan.nemausa.top"}},"server":"38.47.110.86","port":"443","uuid":"7dde5021-a01a-4b8f-84cc-ca1d5501b2cd","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
     type: select
     proxies:
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
 
@@ -132,7 +132,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -141,7 +141,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -150,7 +150,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -159,7 +159,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -168,7 +168,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -178,7 +178,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -188,7 +188,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -198,7 +198,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -208,7 +208,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -218,7 +218,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -229,7 +229,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
     
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -240,7 +240,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
     
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
@@ -251,7 +251,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
     
-#      - 韩国
+      - 韩国
       - 香港
 #      - 日本
  
