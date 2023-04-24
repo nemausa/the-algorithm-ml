@@ -118,14 +118,14 @@ dns:
 proxies:
   - {"type":"vmess","name":"韩国","ws-opts":{"path":"/qyLgEiL0t9","headers":{"host":"blog.nemausa.top"}},"server":"158.247.200.255","port":"443","uuid":"466ec292-442a-4d39-8192-65929fc3b308","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"香港","ws-opts":{"path":"/yC0tXo2z","headers":{"host":"www.nemausa.top"}},"server":"38.47.108.245","port":"50000","uuid":"23023317-d2a3-4c4c-b44f-cd01e4d498dd","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"洛杉矶","ws-opts":{"path":"/eKr3P4uHBu","headers":{"host":"pan.nemausa.top"}},"server":"45.63.52.138","port":"443","uuid":"e2adee34-2825-43c7-899d-acad495b77aa","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  # - {"type":"vmess","name":"洛杉矶","ws-opts":{"path":"/eKr3P4uHBu","headers":{"host":"pan.nemausa.top"}},"server":"45.63.52.138","port":"443","uuid":"e2adee34-2825-43c7-899d-acad495b77aa","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
     type: select
     proxies:
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
 
   - name: 🍎 Apple
     type: select
@@ -134,7 +134,7 @@ proxy-groups:
       - GuGuEX
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
   - name: 📲 Telegram
     type: select
@@ -143,7 +143,7 @@ proxy-groups:
       - DIRECT
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
   - name: 🎬 YouTube
     type: select
@@ -152,7 +152,7 @@ proxy-groups:
       - DIRECT
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
   - name: 🎬 Bilibili
     type: select
@@ -161,7 +161,7 @@ proxy-groups:
       - GuGuEX
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
   - name: 🎬 myTVSUPER
     type: select
@@ -170,7 +170,7 @@ proxy-groups:
       - DIRECT
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
       
   - name: 📲 LineTV
@@ -180,7 +180,7 @@ proxy-groups:
       - DIRECT
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
       
   - name: 🎬 iQiyi
@@ -190,7 +190,7 @@ proxy-groups:
       - GuGuEX
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
       
   - name: 🎵 Tiktok
@@ -200,7 +200,7 @@ proxy-groups:
       - DIRECT
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
      
   - name: 📺 Netflix
@@ -210,7 +210,7 @@ proxy-groups:
       - DIRECT
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
       
   - name: 🌐 Google
@@ -220,7 +220,7 @@ proxy-groups:
       - DIRECT
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
       
   - name: 🖥 Microsoft
@@ -231,7 +231,7 @@ proxy-groups:
     
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
       
   - name: 📟 Twitter
@@ -242,7 +242,7 @@ proxy-groups:
     
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
       
   - name: 📺 International-Media
@@ -253,7 +253,7 @@ proxy-groups:
     
       - 韩国
       - 香港
-      - 洛杉矶
+#      - 洛杉矶
  
       
   - name: China-Media
