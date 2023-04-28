@@ -218,8 +218,10 @@ proxy-groups:
   - name: China-Media
     type: select
     proxies:
-      - DIRECT
       - GuGuEX
+      - DIRECT
+      - 🇭🇰 香港 
+      - 🇰🇷 首尔
   - name: Hijacking
     type: select
     proxies:
@@ -230,12 +232,21 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
+      - 🇭🇰 香港 
+      - 🇰🇷 首尔
   - name: Final
     type: select
     proxies:
       - GuGuEX
       - DIRECT
+  - name: 🖥 Download
+    type: select
+    proxies:
+      - DIRECT
+      - GuGuEX
 rules:
+  - DOMAIN-KEYWORD,docker,🖥 Download
+  - DOMAIN-SUFFIX,storage.live.com,🖥 Download
   - DOMAIN-SUFFIX,ap.spotify.com,DIRECT
   - DOMAIN-KEYWORD,epochtimes,REJECT
   - DOMAIN-SUFFIX,881903.com,REJECT
@@ -514,7 +525,6 @@ rules:
   - DOMAIN-SUFFIX,fabric.io,🖥 Microsoft
   - DOMAIN-SUFFIX,gfx.ms,🖥 Microsoft
   - DOMAIN-SUFFIX,hotmail.com,🖥 Microsoft
-  - DOMAIN-SUFFIX,live.com,🖥 Microsoft
   - DOMAIN-SUFFIX,live.net,🖥 Microsoft
   - DOMAIN-SUFFIX,livefilestore.com,🖥 Microsoft
   - DOMAIN-SUFFIX,lync.com,🖥 Microsoft
