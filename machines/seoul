@@ -129,15 +129,15 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      - 🇭🇰香港
-      - 🇰🇷首尔
+      - 🇭🇰 香港
+      - 🇰🇷 首尔
   - name: 📲 Telegram
     type: select
     proxies:
       - GuGuEX
       - DIRECT
-      - 🇭🇰香港
-      - 🇰🇷首尔
+      - 🇭🇰 香港
+      - 🇰🇷 首尔
   - name: 🎬 YouTube
     type: select
     proxies:
