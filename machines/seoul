@@ -118,11 +118,13 @@ dns:
 proxies:
   #- {"type":"vmess","name":"🇰🇷 首尔","ws-opts":{"path":"/qyLgEiL0t9","headers":{"host":"blog.nemausa.top"}},"server":"158.247.200.255","port":"443","uuid":"466ec292-442a-4d39-8192-65929fc3b308","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"🇭🇰 香港","ws-opts":{"path":"/sdfdDJJJ","headers":{"host":"www.nemausa.top"}},"server":"38.47.108.245","port":"50001","uuid":"78b260a5-93ea-4023-b887-99cc52a0c4a7","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {name: ChatGPT, server: 103.177.33.163, port: 443, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a484da88680c, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines006.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
 proxy-groups:
   - name: GuGuEX
     type: select
     proxies:
       - 🇭🇰 香港
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: 🍎 Apple
     type: select
@@ -130,6 +132,7 @@ proxy-groups:
       - DIRECT
       - GuGuEX
       - 🇭🇰 香港
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: 📲 Telegram
     type: select
@@ -137,6 +140,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: 🎬 YouTube
     type: select
@@ -144,12 +148,22 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
+      - ChatGPT
+      #- 🇰🇷 首尔
+  - name: 🎬 ChatGPT
+    type: select
+    proxies:
+      - ChatGPT
+      - DIRECT
+      - 🇭🇰 香港
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: 🎬 Bilibili
     type: select
     proxies:
       - DIRECT
       - GuGuEX
+      - ChatGPT
       #- 🇰🇷 首尔
       - 🇭🇰 香港
   - name: 🎬 myTVSUPER
@@ -158,6 +172,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: 📲 LineTV
     type: select
@@ -165,12 +180,14 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: 🎬 iQiyi
     type: select
     proxies:
       - DIRECT
       - GuGuEX
+      - ChatGPT
       #- 🇰🇷 首尔
       - 🇭🇰 香港
   - name: 🎵 Tiktok
@@ -179,6 +196,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: 📺 Netflix
     type: select
@@ -186,6 +204,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: 🌐 Google
     type: select
@@ -193,6 +212,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: 🖥 Microsoft
     type: select
@@ -200,6 +220,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: 📟 Twitter
     type: select
@@ -207,6 +228,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: 📺 International-Media
     type: select
@@ -214,6 +236,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港 
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: China-Media
     type: select
@@ -221,6 +244,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港 
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: Hijacking
     type: select
@@ -233,6 +257,7 @@ proxy-groups:
       - DIRECT
       - GuGuEX
       - 🇭🇰 香港 
+      - ChatGPT
       #- 🇰🇷 首尔
   - name: Final
     type: select
@@ -247,6 +272,7 @@ proxy-groups:
 rules:
   - DOMAIN-KEYWORD,docker,🖥 Download
   - DOMAIN-SUFFIX,storage.live.com,🖥 Download
+  - DOMAIN-KEYWORD,openai,🎬 ChatGPT
   - DOMAIN-SUFFIX,ap.spotify.com,DIRECT
   - DOMAIN-KEYWORD,epochtimes,REJECT
   - DOMAIN-SUFFIX,881903.com,REJECT
