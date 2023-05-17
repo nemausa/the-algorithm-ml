@@ -3,3 +3,13 @@
 *://m.baidu.com/*
 *://www.baidu.com/*
 *://plugin.csdn.net/*
+
+
+! 知乎登录弹窗
+zhihu.com##html:style(overflow: auto !important; margin-right: unset !important)
+zhihu.com##.Modal-wrapper
+
+! 知乎右下角 popup
+zhihu.com##.css-1ynzxqw
+
+
