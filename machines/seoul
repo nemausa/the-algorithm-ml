@@ -116,16 +116,16 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  #- {"type":"vmess","name":"🇰🇷 首尔","ws-opts":{"path":"/qyLgEiL0t9","headers":{"host":"blog.nemausa.top"}},"server":"158.247.200.255","port":"443","uuid":"466ec292-442a-4d39-8192-65929fc3b308","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇰🇷 首尔","ws-opts":{"path":"/Lvf9VPpY","headers":{"host":"blog.nemausa.top"}},"server":"158.247.243.105","port":"443","uuid":"8bde382a-9153-43ff-b9a7-67b040a356b6","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"🇭🇰 香港","ws-opts":{"path":"/sdfdDJJJ","headers":{"host":"www.nemausa.top"}},"server":"38.47.108.245","port":"50001","uuid":"78b260a5-93ea-4023-b887-99cc52a0c4a7","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {name: ChatGPT, server: 103.177.33.163, port: 443, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a484da88680c, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines006.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: ChatGPT, server: 216.52.183.243, port: 80, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, tfo: false, plugin: obfs, plugin-opts: {mode: http, host: ""}}
 proxy-groups:
   - name: GuGuEX
     type: select
     proxies:
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 🍎 Apple
     type: select
     proxies:
@@ -133,7 +133,7 @@ proxy-groups:
       - GuGuEX
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 📲 Telegram
     type: select
     proxies:
@@ -141,7 +141,7 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 🎬 YouTube
     type: select
     proxies:
@@ -149,7 +149,7 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 🎬 ChatGPT
     type: select
     proxies:
@@ -157,14 +157,14 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 🎬 Bilibili
     type: select
     proxies:
       - DIRECT
       - GuGuEX
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
       - 🇭🇰 香港
   - name: 🎬 myTVSUPER
     type: select
@@ -173,7 +173,7 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 📲 LineTV
     type: select
     proxies:
@@ -181,14 +181,14 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 🎬 iQiyi
     type: select
     proxies:
       - DIRECT
       - GuGuEX
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
       - 🇭🇰 香港
   - name: 🎵 Tiktok
     type: select
@@ -197,7 +197,7 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 📺 Netflix
     type: select
     proxies:
@@ -205,7 +205,7 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 🌐 Google
     type: select
     proxies:
@@ -213,7 +213,7 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 🖥 Microsoft
     type: select
     proxies:
@@ -221,7 +221,7 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 📟 Twitter
     type: select
     proxies:
@@ -229,7 +229,7 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: 📺 International-Media
     type: select
     proxies:
@@ -237,7 +237,7 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港 
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: China-Media
     type: select
     proxies:
@@ -245,7 +245,7 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港 
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: Hijacking
     type: select
     proxies:
@@ -258,7 +258,7 @@ proxy-groups:
       - GuGuEX
       - 🇭🇰 香港 
       - ChatGPT
-      #- 🇰🇷 首尔
+      - 🇰🇷 首尔
   - name: Final
     type: select
     proxies:
