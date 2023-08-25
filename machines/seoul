@@ -117,7 +117,7 @@ dns:
       - +.gvt1.com
 proxies:
   - {"type":"vmess","name":"🇰🇷 首尔","ws-opts":{"path":"/qZJ71tTf1S","headers":{"host":"blog.nemausa.top"}},"server":"158.247.218.56","port":"443","uuid":"026bb0e5-0d35-45bd-9cdd-1f2661f36ed1","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇭🇰 香港","ws-opts":{"path":"/3lwMcI79Ec52","headers":{"host":"www.nemausa.top"}},"server":"38.47.108.245","port":"50000","uuid":"51b89d6e-059d-4863-bae8-99209647de65","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇭🇰 香港","ws-opts":{"path":"/3lwM9Ec52","headers":{"host":"www.nemausa.top"}},"server":"38.47.108.246","port":"50000","uuid":"51b89d6e-059d-4863-bae8-99209647de65","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
     type: select
