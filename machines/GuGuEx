@@ -269,7 +269,6 @@ proxy-groups:
       - DIRECT
       - GuGuEX
 rules:
-  - DOMAIN-KEYWORD,docker,🖥 Download
   - DOMAIN-SUFFIX,storage.live.com,🖥 Download
   - DOMAIN-KEYWORD,openai,🎬 ChatGPT
   - DOMAIN-SUFFIX,ap.spotify.com,DIRECT
