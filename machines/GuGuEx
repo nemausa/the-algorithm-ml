@@ -122,7 +122,7 @@ proxies:
 proxy-groups:
   - name: GuGuEX
     type: select
-    proxies
+    proxies:
       - 🇭🇰 香港
       - 日本
       - 🇰🇷 首尔
