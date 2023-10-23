@@ -118,13 +118,13 @@ dns:
 proxies:
   - {"type":"vmess","name":"🇰🇷 首尔","ws-opts":{"path":"/q8ODhwhm","headers":{"host":"pan.nemausa.top"}},"server":"158.247.218.56","port":"443","uuid":"53c79845-b506-455d-898f-2abe10b31cce","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"🇭🇰 香港","ws-opts":{"path":"/L3xPzktkKzu","headers":{"host":"www.nemausa.top"}},"server":"38.47.108.245","port":"50000","uuid":"442b50f2-e302-4cd7-b431-367d72beb306","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"日本","ws-opts":{"path":"/J60qL","headers":{"host":"blog.nemausa.top"}},"server":"38.47.124.51","port":"443","uuid":"78531010-42c0-4fc9-8f3f-56ec4e8c9bfc","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇯🇵 日本","ws-opts":{"path":"/J60qL","headers":{"host":"blog.nemausa.top"}},"server":"38.47.124.51","port":"443","uuid":"78531010-42c0-4fc9-8f3f-56ec4e8c9bfc","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
     type: select
     proxies:
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 🍎 Apple
     type: select
@@ -132,7 +132,7 @@ proxy-groups:
       - DIRECT
       - GuGuEX
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 📲 Telegram
     type: select
@@ -140,7 +140,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 🎬 YouTube
     type: select
@@ -148,7 +148,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 🎬 ChatGPT
     type: select
@@ -156,7 +156,7 @@ proxy-groups:
 
       - DIRECT
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 🎬 Bilibili
     type: select
@@ -172,7 +172,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 📲 LineTV
     type: select
@@ -180,7 +180,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 🎬 iQiyi
     type: select
@@ -196,7 +196,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 📺 Netflix
     type: select
@@ -204,7 +204,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 🌐 Google
     type: select
@@ -212,7 +212,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 🖥 Microsoft
     type: select
@@ -220,7 +220,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 📟 Twitter
     type: select
@@ -228,7 +228,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 日本
+      - 🇯🇵 日本
       - 🇰🇷 首尔
   - name: 📺 International-Media
     type: select
