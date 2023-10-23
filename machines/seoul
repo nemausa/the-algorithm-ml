@@ -143,7 +143,6 @@ proxy-groups:
   - name: 🎬 ChatGPT
     type: select
     proxies:
-
       - DIRECT
       - 日本
   - name: 🎬 Bilibili
@@ -151,9 +150,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-
-      - 🇰🇷 首尔
-      - 🇭🇰 香港
+      - 日本
   - name: 🎬 myTVSUPER
     type: select
     proxies:
@@ -206,17 +203,13 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - 🇭🇰 香港 
-
-      - 🇰🇷 首尔
+      - 日本
   - name: China-Media
     type: select
     proxies:
       - GuGuEX
       - DIRECT
-      - 🇭🇰 香港 
-
-      - 🇰🇷 首尔
+      - 日本
   - name: Hijacking
     type: select
     proxies:
@@ -227,9 +220,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      - 🇭🇰 香港 
-
-      - 🇰🇷 首尔
+      - 日本
   - name: Final
     type: select
     proxies:
