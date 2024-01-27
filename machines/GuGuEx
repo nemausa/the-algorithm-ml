@@ -151,14 +151,14 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
   - name: 🎬 ChatGPT
-    type: select
+    type: 🇯🇵 日本
     proxies:
       - DIRECT
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
   - name: 🎬 Bard
-    type: select
+    type: 🇯🇵 日本
     proxies:
       - DIRECT
       - 🇭🇰 香港
