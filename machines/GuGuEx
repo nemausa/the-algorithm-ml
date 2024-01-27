@@ -151,16 +151,16 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
   - name: 🎬 ChatGPT
-    type: 🇯🇵 日本
+    type: select
     proxies:
-      - DIRECT
+      - 🇯🇵 日本
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
   - name: 🎬 Bard
-    type: 🇯🇵 日本
+    type: select
     proxies:
-      - DIRECT
+      - 🇯🇵 日本
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
@@ -169,7 +169,6 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-
       - 🇯🇵 Tokyo
       - 🇭🇰 香港
   - name: 🎬 myTVSUPER
