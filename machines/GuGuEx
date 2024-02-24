@@ -117,7 +117,7 @@ dns:
       - +.gvt1.com
 proxies:
   - {"type":"vmess","name":"🇯🇵 Tokyo","ws-opts":{"path":"/3TAP8D7","headers":{"host":"tokyo.nemausa.top"}},"server":"149.28.20.214","port":"443","uuid":"c0d30f76-bbdc-4496-9651-5aaeed74006a","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇭🇰 香港","ws-opts":{"path":"/gHCzG1Za","headers":{"host":"www.nemausa.top"}},"server":"38.47.108.245","port":"50001","uuid":"226e343f-969c-4e0e-aff4-f7541a987c53","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇭🇰 香港","ws-opts":{"path":"/ZR3VwLhXX4","headers":{"host":"www.nemausa.top"}},"server":"38.47.108.245","port":"50002","uuid":"0d788509-0dde-4c42-aeeb-81276dc5973b","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"🇯🇵 日本","ws-opts":{"path":"/AnPFdOK","headers":{"host":"blog.nemausa.top"}},"server":"38.47.124.51","port":"443","uuid":"0737e938-7585-43a4-a4d6-80ce7c45da44","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
