@@ -119,6 +119,7 @@ proxies:
   - {"type":"vmess","name":"🇯🇵 Tokyo","ws-opts":{"path":"/3TAP8D7","headers":{"host":"tokyo.nemausa.top"}},"server":"149.28.20.214","port":"443","uuid":"c0d30f76-bbdc-4496-9651-5aaeed74006a","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"🇭🇰 香港","ws-opts":{"path":"/ZR3VwLhXX4","headers":{"host":"www.nemausa.top"}},"server":"38.47.108.245","port":"50002","uuid":"0d788509-0dde-4c42-aeeb-81276dc5973b","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"🇯🇵 日本","ws-opts":{"path":"/AnPFdOK","headers":{"host":"blog.nemausa.top"}},"server":"38.47.124.51","port":"443","uuid":"0737e938-7585-43a4-a4d6-80ce7c45da44","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇯🇵 Silicon","ws-opts":{"path":"/nKXB4iKPD","headers":{"host":"silicon.nemausa.top"}},"server":"149.28.223.95","port":"443","uuid":"199da09d-698b-44d3-8c54-c7b06f873aef","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
     type: select
@@ -126,6 +127,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 🍎 Apple
     type: select
     proxies:
@@ -134,6 +136,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 📲 Telegram
     type: select
     proxies:
@@ -142,6 +145,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 🎬 YouTube
     type: select
     proxies:
@@ -150,6 +154,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 🎬 ChatGPT
     type: select
     proxies:
@@ -157,6 +162,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 🎬 GoogleAI
     type: select
     proxies:
@@ -164,6 +170,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 🎬 Bilibili
     type: select
     proxies:
@@ -171,6 +178,7 @@ proxy-groups:
       - GuGuEX
 
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
       - 🇭🇰 香港
   - name: 🎬 myTVSUPER
     type: select
@@ -180,6 +188,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 📲 LineTV
     type: select
     proxies:
@@ -188,6 +197,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 🎬 iQiyi
     type: select
     proxies:
@@ -195,6 +205,7 @@ proxy-groups:
       - GuGuEX
 
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
       - 🇭🇰 香港
   - name: 🎵 Tiktok
     type: select
@@ -204,6 +215,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 📺 Netflix
     type: select
     proxies:
@@ -212,6 +224,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 🌐 Google
     type: select
     proxies:
@@ -220,6 +233,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 🖥 Microsoft
     type: select
     proxies:
@@ -228,6 +242,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 📟 Twitter
     type: select
     proxies:
@@ -236,6 +251,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: 📺 International-Media
     type: select
     proxies:
@@ -244,6 +260,7 @@ proxy-groups:
       - 🇭🇰 香港 
 
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: China-Media
     type: select
     proxies:
@@ -252,6 +269,7 @@ proxy-groups:
       - 🇭🇰 香港 
 
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: Hijacking
     type: select
     proxies:
@@ -265,6 +283,7 @@ proxy-groups:
       - 🇭🇰 香港 
 
       - 🇯🇵 Tokyo
+      - 🇯🇵 Silicon
   - name: Final
     type: select
     proxies:
