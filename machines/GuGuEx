@@ -116,69 +116,58 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {"type":"vmess","name":"🇯🇵 Tokyo","ws-opts":{"path":"/3TAP8D7","headers":{"host":"tokyo.nemausa.top"}},"server":"149.28.20.214","port":"443","uuid":"c0d30f76-bbdc-4496-9651-5aaeed74006a","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"name":"🇰🇷 Seoul","type":"vmess","server":"158.247.217.206","port":443,"cipher":"auto","uuid":"c77cfaf5-d19a-4c92-8806-1f1aeca94b62","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  # - {"type":"vmess","name":"🇰🇷 Seoul","ws-opts":{"path":"/CY1zyYbQ","headers":{"host":"seoul.nemausa.top"}},"server":"158.247.217.206","port":"443","uuid":"bc9fa992-12b7-4ad9-b5db-497523e47439","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"🇭🇰 香港","ws-opts":{"path":"/wzkvP7","headers":{"host":"hk.nemausa.top"}},"server":"38.47.103.67","port":"443","uuid":"28595303-1e1c-4c5a-b776-2eb13df4d93b","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇯🇵 日本","ws-opts":{"path":"/AnPFdOK","headers":{"host":"blog.nemausa.top"}},"server":"38.47.124.51","port":"443","uuid":"0737e938-7585-43a4-a4d6-80ce7c45da44","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇯🇵 Silicon","ws-opts":{"path":"/ktfB0SSlS","headers":{"host":"silicon.nemausa.top"}},"server":"149.28.223.95","port":"443","uuid":"bea3519e-47ad-4cfc-8d50-11ac33bc576c","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇸 Silicon","ws-opts":{"path":"/ktfB0SSlS","headers":{"host":"silicon.nemausa.top"}},"server":"149.28.223.95","port":"443","uuid":"bea3519e-47ad-4cfc-8d50-11ac33bc576c","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
     type: select
     proxies:
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 🍎 Apple
     type: select
     proxies:
       - DIRECT
       - GuGuEX
+      - 🇰🇷 Seoul
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇺🇸 Silicon
   - name: 📲 Telegram
     type: select
     proxies:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 🎬 YouTube
     type: select
     proxies:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 🎬 ChatGPT
     type: select
     proxies:
-      - 🇯🇵 日本
+      - 🇰🇷 Seoul
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 🎬 GoogleAI
     type: select
     proxies:
-      - 🇯🇵 日本
+      - 🇰🇷 Seoul
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 🎬 Bilibili
     type: select
     proxies:
       - DIRECT
       - GuGuEX
 
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+
+      - 🇺🇸 Silicon
       - 🇭🇰 香港
   - name: 🎬 myTVSUPER
     type: select
@@ -186,72 +175,56 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 📲 LineTV
     type: select
     proxies:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 🎬 iQiyi
     type: select
     proxies:
       - DIRECT
       - GuGuEX
-
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
       - 🇭🇰 香港
+      - 🇰🇷 Seoul
   - name: 🎵 Tiktok
     type: select
     proxies:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 📺 Netflix
     type: select
     proxies:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 🌐 Google
     type: select
     proxies:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 🖥 Microsoft
     type: select
     proxies:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 📟 Twitter
     type: select
     proxies:
       - GuGuEX
       - DIRECT
       - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇰🇷 Seoul
   - name: 📺 International-Media
     type: select
     proxies:
@@ -259,17 +232,15 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港 
 
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+
+      - 🇺🇸 Silicon
   - name: China-Media
     type: select
     proxies:
       - GuGuEX
       - DIRECT
-      - 🇭🇰 香港 
-
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇭🇰 香港
+      - 🇰🇷 Seoul
   - name: Hijacking
     type: select
     proxies:
@@ -280,10 +251,8 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      - 🇭🇰 香港 
-
-      - 🇯🇵 Tokyo
-      - 🇯🇵 Silicon
+      - 🇭🇰 香港
+      - 🇰🇷 Seoul
   - name: Final
     type: select
     proxies:
