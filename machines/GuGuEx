@@ -116,8 +116,8 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
-  - {"name":"🇰🇷 Seoul","type":"vmess","server":"158.247.217.206","port":443,"cipher":"auto","uuid":"c77cfaf5-d19a-4c92-8806-1f1aeca94b62","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  # - {"type":"vmess","name":"🇰🇷 Seoul","ws-opts":{"path":"/CY1zyYbQ","headers":{"host":"seoul.nemausa.top"}},"server":"158.247.217.206","port":"443","uuid":"bc9fa992-12b7-4ad9-b5db-497523e47439","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  # - {"name":"🇰🇷 Seoul","type":"vmess","server":"158.247.217.206","port":443,"cipher":"auto","uuid":"c77cfaf5-d19a-4c92-8806-1f1aeca94b62","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"type":"vmess","name":"🇰🇷 Seoul","ws-opts":{"path":"/mfztd5","headers":{"host":"seoul.nemausa.top"}},"server":"158.247.217.206","port":"443","uuid":"5ff94336-f5be-4833-8742-c7b35b71eaba","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"🇭🇰 香港","ws-opts":{"path":"/wzkvP7","headers":{"host":"hk.nemausa.top"}},"server":"38.47.103.67","port":"443","uuid":"28595303-1e1c-4c5a-b776-2eb13df4d93b","alterId":"0","cipher":"auto","network":"ws","tls":true}
   # - {"type":"vmess","name":"🇺🇸 Silicon","ws-opts":{"path":"/ktfB0SSlS","headers":{"host":"silicon.nemausa.top"}},"server":"149.28.223.95","port":"443","uuid":"bea3519e-47ad-4cfc-8d50-11ac33bc576c","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
