@@ -119,14 +119,14 @@ proxies:
   # - {"name":"🇰🇷 Seoul","type":"vmess","server":"158.247.217.206","port":443,"cipher":"auto","uuid":"c77cfaf5-d19a-4c92-8806-1f1aeca94b62","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"type":"vmess","name":"🇰🇷 Seoul","ws-opts":{"path":"/Lwe8eNP4","headers":{"host":"seoul.nemausa.top"}},"server":"158.247.217.206","port":"443","uuid":"e99857bf-3c68-4f7f-97c9-9a6c257307ac","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"🇭🇰 HongKong","ws-opts":{"path":"/wzkvP7","headers":{"host":"hk.nemausa.top"}},"server":"38.47.103.67","port":"443","uuid":"28595303-1e1c-4c5a-b776-2eb13df4d93b","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇯🇵 Tokyo","ws-opts":{"path":"/MpXZHVxX9Bsu","headers":{"host":"tokyo.nemausa.top"}},"server":"149.28.20.214","port":"443","uuid":"cf9573af-5d5a-4cdc-96d0-7b93664a791b","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇸 LosAngeles","ws-opts":{"path":"/a3GKr5jP7lM","headers":{"host":"los.nemausa.top"}},"server":"45.77.68.74","port":"443","uuid":"6c590cf9-dd9a-4f3b-91fc-bb86f61772d0","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
     type: select
     proxies:
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 🍎 Apple
     type: select
     proxies:
@@ -134,7 +134,7 @@ proxy-groups:
       - GuGuEX
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 📲 Telegram
     type: select
     proxies:
@@ -142,7 +142,7 @@ proxy-groups:
       - DIRECT
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 🎬 YouTube
     type: select
     proxies:
@@ -150,19 +150,19 @@ proxy-groups:
       - DIRECT
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 🎬 ChatGPT
     type: select
     proxies:
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 🎬 GoogleAI
     type: select
     proxies:
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 🎬 Bilibili
     type: select
     proxies:
@@ -170,7 +170,7 @@ proxy-groups:
       - GuGuEX
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 🎬 myTVSUPER
     type: select
     proxies:
@@ -178,7 +178,7 @@ proxy-groups:
       - DIRECT
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 📲 LineTV
     type: select
     proxies:
@@ -186,7 +186,7 @@ proxy-groups:
       - DIRECT
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 🎬 iQiyi
     type: select
     proxies:
@@ -194,7 +194,7 @@ proxy-groups:
       - GuGuEX
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 🎵 Tiktok
     type: select
     proxies:
@@ -202,7 +202,7 @@ proxy-groups:
       - DIRECT
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 📺 Netflix
     type: select
     proxies:
@@ -210,7 +210,7 @@ proxy-groups:
       - DIRECT
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 🌐 Google
     type: select
     proxies:
@@ -218,7 +218,7 @@ proxy-groups:
       - DIRECT
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 🖥 Microsoft
     type: select
     proxies:
@@ -226,7 +226,7 @@ proxy-groups:
       - DIRECT
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 📟 Twitter
     type: select
     proxies:
@@ -234,7 +234,7 @@ proxy-groups:
       - DIRECT
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: 📺 International-Media
     type: select
     proxies:
@@ -242,7 +242,7 @@ proxy-groups:
       - DIRECT
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: China-Media
     type: select
     proxies:
@@ -250,7 +250,7 @@ proxy-groups:
       - DIRECT
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: Hijacking
     type: select
     proxies:
@@ -263,7 +263,7 @@ proxy-groups:
       - GuGuEX
       - 🇰🇷 Seoul       
       - 🇭🇰 HongKong
-      - 🇯🇵 Tokyo
+      - 🇺🇸 LosAngeles
   - name: Final
     type: select
     proxies:
