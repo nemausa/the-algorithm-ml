@@ -119,7 +119,7 @@ proxies:
   # - {"name":"🇰🇷 Seoul","type":"vmess","server":"158.247.217.206","port":443,"cipher":"auto","uuid":"c77cfaf5-d19a-4c92-8806-1f1aeca94b62","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"type":"vmess","name":"🇺🇸 US.LA.BGP","ws-opts":{"path":"/luLr5Y","headers":{"host":"google.nemausa.top"}},"server":"38.95.76.53","port":"443","uuid":"ce342ee9-5922-46ac-96c5-ab95933cfff7","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"🇭🇰 HongKong","ws-opts":{"path":"/7qpKEi6","headers":{"host":"hk.nemausa.top"}},"server":"38.47.103.67","port":"443","uuid":"e3b556c9-dcdf-4239-a824-6bc9dc0700e9","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇺🇸 LosAngeles","ws-opts":{"path":"/FKIyCh9N","headers":{"host":"los.nemausa.top"}},"server":"45.77.68.74","port":"443","uuid":"85726c92-7b74-47c1-8529-bf25557df874","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇸 LosAngeles","ws-opts":{"path":"/S5s8md","headers":{"host":"los.nemausa.top"}},"server":"45.77.68.74","port":"443","uuid":"ddca01ea-adbd-4c49-9a8b-54373ec54375","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
     type: select
