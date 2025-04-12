@@ -117,7 +117,7 @@ dns:
       - +.gvt1.com
 proxies:
   - {"type":"vmess","name":"🇭🇰 HongKong","ws-opts":{"path":"/sdfasdfa","headers":{"host":"hk.billzxlj.top"}},"server":"hk.billzxlj.top","port":"443","uuid":"b76291ac-4404-477d-b948-eca9ae3c3064","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇺🇸 LosAngeles","ws-opts":{"path":"/a00cd023-057d-4eea-b022-ca542b3fa952","headers":{"host":"los.billzxlj.top"}},"server":"45.77.68.74","port":"443","uuid":"a00cd023-057d-4eea-b022-ca542b3fa952","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇸 LosAngeles","ws-opts":{"path":"/a00cd023-057d-4eea-b022-ca542b3fa952","headers":{"host":"45.77.68.74"}},"server":"45.77.68.74","port":"443","uuid":"a00cd023-057d-4eea-b022-ca542b3fa952","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
     type: select
