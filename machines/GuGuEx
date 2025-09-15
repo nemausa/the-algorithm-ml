@@ -117,14 +117,15 @@ dns:
       - +.gvt1.com
 proxies:
   # - {"name":"🇰🇷 Seoul","type":"vmess","server":"158.247.217.206","port":443,"cipher":"auto","uuid":"c77cfaf5-d19a-4c92-8806-1f1aeca94b62","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  #- {"type":"vmess","name":"🇺🇸 US.LA.BGP","ws-opts":{"path":"/nJh6oifScey","headers":{"host":"seoul.nemausa.top"}},"server":"158.247.219.158","port":"443","uuid":"c8ab5869-33d9-4745-a90c-6a338b3c5f30","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇭🇰 HongKong","ws-opts":{"path":"/E6GJjS2Uk4xc","headers":{"host":"hk.nemausa.top"}},"server":"38.47.123.212","port":"443","uuid":"772e4aea-f774-4e32-9c7c-07d11e61dcd1","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇸 US.LA.BGP","ws-opts":{"path":"/CG27JzFm","headers":{"host":"los.tri.nemausa.top"}},"server":"216.40.86.219","port":"443","uuid":"9420771a-9d3c-476b-be95-6e0e6a6f3289","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  # - {"type":"vmess","name":"🇭🇰 HongKong","ws-opts":{"path":"/E6GJjS2Uk4xc","headers":{"host":"hk.nemausa.top"}},"server":"38.47.123.212","port":"443","uuid":"772e4aea-f774-4e32-9c7c-07d11e61dcd1","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇭🇰 HongKong","server":"38.47.123.212","port":443,"uuid":"772e4aea-f774-4e32-9c7c-07d11e61dcd1","alterId":0,"cipher":"auto","network":"ws","tls":true,"ws-opts":{"path":"/E6GJjS2Uk4xc","headers":{"host":"hk.nemausa.top"}}}
   - {"type":"vmess","name":"🇺🇸 LosAngeles","ws-opts":{"path":"/1HNjo","headers":{"host":"los.nemausa.top"}},"server":"45.77.68.74","port":"443","uuid":"3e5eaed6-009d-4935-8839-f5fa6f139e04","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: GuGuEX
     type: select
     proxies:
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 🍎 Apple
@@ -132,7 +133,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 📲 Telegram
@@ -140,7 +141,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 🎬 YouTube
@@ -148,19 +149,19 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 🎬 ChatGPT
     type: select
     proxies:
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 🎬 GoogleAI
     type: select
     proxies:
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 🎬 Bilibili
@@ -168,7 +169,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 🎬 myTVSUPER
@@ -176,7 +177,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 📲 LineTV
@@ -184,7 +185,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 🎬 iQiyi
@@ -192,7 +193,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 🎵 Tiktok
@@ -200,7 +201,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 📺 Netflix
@@ -208,7 +209,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 🌐 Google
@@ -216,7 +217,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 🖥 Microsoft
@@ -224,7 +225,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 📟 Twitter
@@ -232,7 +233,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: 📺 International-Media
@@ -240,7 +241,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: China-Media
@@ -248,7 +249,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: Hijacking
@@ -261,7 +262,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      #- 🇺🇸 US.LA.BGP     
+      - 🇺🇸 US.LA.BGP     
       - 🇭🇰 HongKong
       - 🇺🇸 LosAngeles
   - name: Final
@@ -279,6 +280,7 @@ rules:
   - DOMAIN-KEYWORD,openai,🎬 ChatGPT
   - DOMAIN-KEYWORD,tiktok,🎬 ChatGPT
   - DOMAIN-KEYWORD,chatgpt,🎬 ChatGPT
+  - DOMAIN-KEYWORD,grok,🎬 ChatGPT
   - DOMAIN-KEYWORD,bard,🎬 GoogleAI
   - DOMAIN-KEYWORD,gemini,🎬 GoogleAI
   - DOMAIN-SUFFIX,ap.spotify.com,DIRECT
