@@ -124,15 +124,15 @@ dns:
 proxies:
   - name: "🇺🇸 Silicon Valley"
     type: vmess
-    server: 149.28.219.207
+    server: sli.nemausa.top
     port: 443
-    uuid: "90f9278a-5500-4fe7-b531-c548e40add56"
+    uuid: "5b328b36-f5ef-4392-b10b-884d3db3c173"
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: "/csp20AvfE2n"
+      path: "/37bf516/"
       headers:
         host: "sli.nemausa.top"
 
@@ -152,17 +152,17 @@ proxies:
 
   - name: "🇺🇸 LosAngeles"
     type: vmess
-    server: 216.40.86.219
+    server: lostri.nemausa.top
     port: 443
-    uuid: "63b0b718-0cec-4253-8624-636cecff76f1"
+    uuid: "1bc9060e-8a41-4019-922c-08cf13645a7b"
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: "/QPoX5F3tA"
+      path: "/fee1ec451/"
       headers:
-        host: "los.tri.nemausa.top"
+        host: "lostri.nemausa.top"
 
 proxy-groups:
   - name: GuGuEX
