@@ -21,12 +21,11 @@ profile:
 
 dns:
   enable: true
-  listen: 127.0.0.1:8853
+  listen: 0.0.0.0:7874
   default-nameserver:
     - 223.5.5.5
-    - 114.114.114.114
+    - 119.29.29.29
   ipv6: false
-  enhanced-mode: fake-ip
   fake-ip-filter:
     - "*.lan"
     - "stun.*.*.*"
@@ -100,16 +99,16 @@ dns:
     - "*.*.xboxlive.com"
     - speedtest.cros.wr.pvp.net
   nameserver:
-    - https://223.6.6.6/dns-query
-    - https://9.9.9.9/dns-query
+    - 223.5.5.5
+    - 119.29.29.29
   fallback:
-    - tls://8.8.4.4
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
   fallback-filter:
     geoip: true
+    geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-      - 0.0.0.0/32
-      - 127.0.0.1/32
     domain:
       - +.google.com
       - +.facebook.com
@@ -150,7 +149,7 @@ proxies:
       headers:
         host: "hk.nemausa.top"
 
-  - name: "🇺🇸 LosAngeles"
+  - name: "🇺🇸 LosAngeles Tri"
     type: vmess
     server: lostri.nemausa.top
     port: 443
