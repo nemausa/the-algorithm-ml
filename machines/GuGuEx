@@ -137,15 +137,15 @@ proxies:
 
   - name: "🇭🇰 HongKong"
     type: vmess
-    server: 38.47.123.212
+    server: hk.nemausa.top
     port: 443
-    uuid: "772e4aea-f774-4e32-9c7c-07d11e61dcd1"
+    uuid: "a0e61806-423d-4165-8776-b4b4def90ad1"
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: "/E6GJjS2Uk4xc"
+      path: "/8cc1c51/"
       headers:
         host: "hk.nemausa.top"
 
