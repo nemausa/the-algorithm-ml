@@ -1,0 +1,387 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+allow-lan: false
+mode: Rule
+log-level: info
+ipv6: false
+
+hosts:
+  services.googleapis.cn: 216.58.200.67
+  www.google.cn: 216.58.200.67
+
+external-controller: 0.0.0.0:9090
+
+clash-for-android:
+  append-system-dns: false
+
+profile:
+  tracing: true
+
+dns:
+  enable: true
+  listen: 0.0.0.0:7874
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  ipv6: false
+  fake-ip-filter:
+    - "*.lan"
+    - "stun.*.*.*"
+    - "stun.*.*"
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - time1.cloud.tencent.com
+    - time.ustc.edu.cn
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - ntp.aliyun.com
+    - ntp1.aliyun.com
+    - ntp2.aliyun.com
+    - ntp3.aliyun.com
+    - ntp4.aliyun.com
+    - ntp5.aliyun.com
+    - ntp6.aliyun.com
+    - ntp7.aliyun.com
+    - time1.aliyun.com
+    - time2.aliyun.com
+    - time3.aliyun.com
+    - time4.aliyun.com
+    - time5.aliyun.com
+    - time6.aliyun.com
+    - time7.aliyun.com
+    - "*.time.edu.cn"
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - "xbox.*.*.microsoft.com"
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - speedtest.cros.wr.pvp.net
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  fallback:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.xn--ngstr-lra8j.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.googleapis.com
+      - +.gvt1.com
+
+proxies:
+  - name: "🇺🇸 Silicon Valley"
+    type: vmess
+    server: sli.nemausa.top
+    port: 443
+    uuid: "5b328b36-f5ef-4392-b10b-884d3db3c173"
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: "/37bf516/"
+      headers:
+        host: "sli.nemausa.top"
+
+  - name: "🇭🇰 HongKong"
+    type: vmess
+    server: hk.nemausa.top
+    port: 443
+    uuid: "a0e61806-423d-4165-8776-b4b4def90ad1"
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: "/8cc1c51/"
+      headers:
+        host: "hk.nemausa.top"
+
+  - name: "🇺🇸 LosAngeles Tri"
+    type: vmess
+    server: lostri.nemausa.top
+    port: 443
+    uuid: "1bc9060e-8a41-4019-922c-08cf13645a7b"
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: "/fee1ec451/"
+      headers:
+        host: "lostri.nemausa.top"
+
+proxy-groups:
+  - name: GuGuEX
+    type: select
+    proxies:
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "🍎 Apple"
+    type: select
+    proxies:
+      - DIRECT
+      - GuGuEX
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "📲 Telegram"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "🎬 YouTube"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "🤖 ChatGPT"
+    type: select
+    proxies:
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "🧠 GoogleAI"
+    type: select
+    proxies:
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "🎬 Bilibili"
+    type: select
+    proxies:
+      - DIRECT
+      - GuGuEX
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "🎬 myTVSUPER"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "📲 LineTV"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "🎬 iQiyi"
+    type: select
+    proxies:
+      - DIRECT
+      - GuGuEX
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "🎵 TikTok"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "📺 Netflix"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "🌐 Google"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "🖥 Microsoft"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "📟 Twitter"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "📺 International-Media"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "China-Media"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "Hijacking"
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+  - name: "China-Websites"
+    type: select
+    proxies:
+      - DIRECT
+      - GuGuEX
+      - "🇺🇸 Silicon Valley"
+      - "🇭🇰 HongKong"
+      - "🇺🇸 LosAngeles"
+
+  - name: "Final"
+    type: select
+    proxies:
+      - GuGuEX
+      - DIRECT
+
+rules:
+  # Apple
+  - DOMAIN-SUFFIX,apple.com,🍎 Apple
+  - DOMAIN-SUFFIX,icloud.com,🍎 Apple
+  - DOMAIN-SUFFIX,icloud-content.com,🍎 Apple
+  - DOMAIN-SUFFIX,itunes.apple.com,🍎 Apple
+
+  # Google
+  - DOMAIN-KEYWORD,google,🌐 Google
+  - DOMAIN-SUFFIX,gstatic.com,🌐 Google
+  - DOMAIN-SUFFIX,youtube.com,🎬 YouTube
+  - DOMAIN-SUFFIX,googlevideo.com,🎬 YouTube
+  - DOMAIN-SUFFIX,ai.google.dev,🧠 GoogleAI
+
+  # Microsoft
+  - DOMAIN-KEYWORD,microsoft,🖥 Microsoft
+  - DOMAIN-SUFFIX,windows.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,live.com,🖥 Microsoft
+  - DOMAIN-SUFFIX,office.com,🖥 Microsoft
+
+  # Social
+  - DOMAIN-SUFFIX,twitter.com,📟 Twitter
+  - DOMAIN-SUFFIX,twimg.com,📟 Twitter
+  - DOMAIN-SUFFIX,telegram.org,📲 Telegram
+  - DOMAIN-SUFFIX,t.me,📲 Telegram
+
+  # Streaming
+  - DOMAIN-SUFFIX,netflix.com,📺 Netflix
+  - DOMAIN-SUFFIX,netflix.net,📺 Netflix
+  - DOMAIN-SUFFIX,nflxvideo.net,📺 Netflix
+  - DOMAIN-SUFFIX,bilibili.com,🎬 Bilibili
+  - DOMAIN-SUFFIX,iqiyi.com,China-Media
+  - DOMAIN-SUFFIX,iq.com,China-Media
+  - DOMAIN-SUFFIX,tiktok.com,🎵 TikTok
+  - DOMAIN-SUFFIX,ttwstatic.com,🎵 TikTok
+
+  # Common CN sites to DIRECT
+  - GEOIP,CN,China-Websites
+  - DOMAIN-SUFFIX,zhihu.com,China-Websites
+  - DOMAIN-SUFFIX,zhimg.com,China-Websites
+  - DOMAIN-SUFFIX,qq.com,China-Websites
+  - DOMAIN-SUFFIX,baidu.com,China-Websites
+  - DOMAIN-SUFFIX,163.com,China-Websites
+  - DOMAIN-SUFFIX,alipay.com,China-Websites
+  - DOMAIN-SUFFIX,taobao.com,China-Websites
+  - DOMAIN-SUFFIX,tmall.com,China-Websites
+
+  # Hijacking / ad domains (sample)
+  - DOMAIN-SUFFIX,adsame.com,Hijacking
+  - DOMAIN-SUFFIX,aiclk.com,Hijacking
+
+  # Default
+  - MATCH,Final
