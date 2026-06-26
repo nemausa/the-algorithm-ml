@@ -123,31 +123,17 @@ dns:
 proxies:
   - name: "🇺🇸 Silicon Valley"
     type: vmess
-    server: sli.nemausa.top
+    server: valley.nemausa.top
     port: 443
-    uuid: "5b328b36-f5ef-4392-b10b-884d3db3c173"
+    uuid: "83acf543-fd73-4bed-8ce4-e944daf9fc5f"
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: "/37bf516/"
+      path: "/CmbH1"
       headers:
-        host: "sli.nemausa.top"
-
-  - name: "🇭🇰 HongKong"
-    type: vmess
-    server: hk.nemausa.top
-    port: 443
-    uuid: "a0e61806-423d-4165-8776-b4b4def90ad1"
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: "/8cc1c51/"
-      headers:
-        host: "hk.nemausa.top"
+        host: "valley.nemausa.top"
 
   - name: "🇺🇸 LosAngeles Tri"
     type: vmess
@@ -168,8 +154,7 @@ proxy-groups:
     type: select
     proxies:
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "🍎 Apple"
     type: select
@@ -177,8 +162,7 @@ proxy-groups:
       - DIRECT
       - GuGuEX
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "📲 Telegram"
     type: select
@@ -186,8 +170,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "🎬 YouTube"
     type: select
@@ -195,22 +178,19 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "🤖 ChatGPT"
     type: select
     proxies:
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "🧠 GoogleAI"
     type: select
     proxies:
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "🎬 Bilibili"
     type: select
@@ -218,8 +198,7 @@ proxy-groups:
       - DIRECT
       - GuGuEX
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "🎬 myTVSUPER"
     type: select
@@ -227,8 +206,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "📲 LineTV"
     type: select
@@ -236,8 +214,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "🎬 iQiyi"
     type: select
@@ -245,8 +222,7 @@ proxy-groups:
       - DIRECT
       - GuGuEX
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "🎵 TikTok"
     type: select
@@ -254,8 +230,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "📺 Netflix"
     type: select
@@ -263,8 +238,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "🌐 Google"
     type: select
@@ -272,8 +246,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "🖥 Microsoft"
     type: select
@@ -281,8 +254,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "📟 Twitter"
     type: select
@@ -290,8 +262,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "📺 International-Media"
     type: select
@@ -299,8 +270,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "China-Media"
     type: select
@@ -308,8 +278,7 @@ proxy-groups:
       - GuGuEX
       - DIRECT
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "Hijacking"
     type: select
@@ -323,8 +292,7 @@ proxy-groups:
       - DIRECT
       - GuGuEX
       - "🇺🇸 Silicon Valley"
-      - "🇭🇰 HongKong"
-      - "🇺🇸 LosAngeles"
+      - "🇺🇸 LosAngeles Tri"
 
   - name: "Final"
     type: select
