@@ -121,19 +121,20 @@ dns:
       - +.gvt1.com
 
 proxies:
-  - name: "🇺🇸 Silicon Valley"
+  - name: "Silicon"
     type: vmess
-    server: valley.nemausa.top
+    server: 149.28.207.29
     port: 443
-    uuid: "83acf543-fd73-4bed-8ce4-e944daf9fc5f"
+    uuid: "5806fc6f-2ae4-4a05-898f-c78139f04591"
     alterId: 0
-    cipher: auto
+    cipher: none
     tls: true
+    servername: silicon.nemausa.top
     network: ws
     ws-opts:
-      path: "/CmbH1"
+      path: "/HYUPC"
       headers:
-        host: "valley.nemausa.top"
+        Host: "silicon.nemausa.top"
 
   - name: "🇺🇸 LosAngeles Tri"
     type: vmess
@@ -153,7 +154,7 @@ proxy-groups:
   - name: GuGuEX
     type: select
     proxies:
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "🍎 Apple"
@@ -161,7 +162,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "📲 Telegram"
@@ -169,7 +170,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "🎬 YouTube"
@@ -177,19 +178,19 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "🤖 ChatGPT"
     type: select
     proxies:
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "🧠 GoogleAI"
     type: select
     proxies:
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "🎬 Bilibili"
@@ -197,7 +198,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "🎬 myTVSUPER"
@@ -205,7 +206,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "📲 LineTV"
@@ -213,7 +214,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "🎬 iQiyi"
@@ -221,7 +222,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "🎵 TikTok"
@@ -229,7 +230,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "📺 Netflix"
@@ -237,7 +238,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "🌐 Google"
@@ -245,7 +246,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "🖥 Microsoft"
@@ -253,7 +254,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "📟 Twitter"
@@ -261,7 +262,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "📺 International-Media"
@@ -269,7 +270,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "China-Media"
@@ -277,7 +278,7 @@ proxy-groups:
     proxies:
       - GuGuEX
       - DIRECT
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "Hijacking"
@@ -291,7 +292,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - GuGuEX
-      - "🇺🇸 Silicon Valley"
+      - "Silicon"
       - "🇺🇸 LosAngeles Tri"
 
   - name: "Final"
