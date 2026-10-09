@@ -151,206 +151,104 @@ proxies:
         host: "lostri.nemausa.top"
 
 proxy-groups:
-  - name: GuGuEX
-    type: select
-    proxies:
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "🍎 Apple"
-    type: select
-    proxies:
-      - DIRECT
-      - GuGuEX
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "📲 Telegram"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "🎬 YouTube"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "🤖 ChatGPT"
-    type: select
-    proxies:
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "🧠 GoogleAI"
-    type: select
-    proxies:
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "🎬 Bilibili"
-    type: select
-    proxies:
-      - DIRECT
-      - GuGuEX
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "🎬 myTVSUPER"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "📲 LineTV"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "🎬 iQiyi"
-    type: select
-    proxies:
-      - DIRECT
-      - GuGuEX
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "🎵 TikTok"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "📺 Netflix"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "🌐 Google"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "🖥 Microsoft"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "📟 Twitter"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "📺 International-Media"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "China-Media"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "Hijacking"
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-
-  - name: "China-Websites"
-    type: select
-    proxies:
-      - DIRECT
-      - GuGuEX
-      - "Silicon"
-      - "🇺🇸 LosAngeles Tri"
-
-  - name: "Final"
-    type: select
-    proxies:
-      - GuGuEX
-      - DIRECT
+- name: GuGuEX
+  type: select
+  proxies:
+  - Silicon
+  - 🇺🇸 LosAngeles Tri
+- name: 🤖 ChatGPT
+  type: select
+  proxies:
+  - GuGuEX
+  - Silicon
+  - 🇺🇸 LosAngeles Tri
+- name: 🍎 Apple
+  type: select
+  proxies:
+  - DIRECT
+  - 🤖 ChatGPT
+- name: Hijacking
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
 
 rules:
-  # Apple
+  # 本地与局域网直连
+  - DOMAIN,localhost,DIRECT
+  - DOMAIN-SUFFIX,localhost,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,lan,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+
+  # 保留原有广告拦截
+  - DOMAIN-SUFFIX,adsame.com,Hijacking
+  - DOMAIN-SUFFIX,aiclk.com,Hijacking
+
+  # AI 服务统一出口
+  - DOMAIN-SUFFIX,chatgpt.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,openai.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,oaistatic.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,oaiusercontent.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,claude.ai,🤖 ChatGPT
+  - DOMAIN-SUFFIX,anthropic.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,claude.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,gemini.google.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,aistudio.google.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,ai.google.dev,🤖 ChatGPT
+  - DOMAIN-SUFFIX,generativelanguage.googleapis.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,grok.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,x.ai,🤖 ChatGPT
+
+  # Apple 默认直连，可在分组中切换
   - DOMAIN-SUFFIX,apple.com,🍎 Apple
   - DOMAIN-SUFFIX,icloud.com,🍎 Apple
   - DOMAIN-SUFFIX,icloud-content.com,🍎 Apple
   - DOMAIN-SUFFIX,itunes.apple.com,🍎 Apple
 
-  # Google
-  - DOMAIN-KEYWORD,google,🌐 Google
-  - DOMAIN-SUFFIX,gstatic.com,🌐 Google
-  - DOMAIN-SUFFIX,youtube.com,🎬 YouTube
-  - DOMAIN-SUFFIX,googlevideo.com,🎬 YouTube
-  - DOMAIN-SUFFIX,ai.google.dev,🧠 GoogleAI
+  # 原有国外服务统一出口
+  - DOMAIN-SUFFIX,x.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,gstatic.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,youtube.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,googlevideo.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,windows.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,live.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,office.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,twitter.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,twimg.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,telegram.org,🤖 ChatGPT
+  - DOMAIN-SUFFIX,t.me,🤖 ChatGPT
+  - DOMAIN-SUFFIX,netflix.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,netflix.net,🤖 ChatGPT
+  - DOMAIN-SUFFIX,nflxvideo.net,🤖 ChatGPT
+  - DOMAIN-SUFFIX,tiktok.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,ttwstatic.com,🤖 ChatGPT
 
-  # Microsoft
-  - DOMAIN-KEYWORD,microsoft,🖥 Microsoft
-  - DOMAIN-SUFFIX,windows.com,🖥 Microsoft
-  - DOMAIN-SUFFIX,live.com,🖥 Microsoft
-  - DOMAIN-SUFFIX,office.com,🖥 Microsoft
+  # 保留原有国内网站直连
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
+  - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+  - DOMAIN-SUFFIX,iq.com,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-SUFFIX,zhimg.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-SUFFIX,alipay.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
 
-  # Social
-  - DOMAIN-SUFFIX,twitter.com,📟 Twitter
-  - DOMAIN-SUFFIX,twimg.com,📟 Twitter
-  - DOMAIN-SUFFIX,telegram.org,📲 Telegram
-  - DOMAIN-SUFFIX,t.me,📲 Telegram
+  # 关键词补充匹配
+  - DOMAIN-KEYWORD,google,🤖 ChatGPT
+  - DOMAIN-KEYWORD,microsoft,🤖 ChatGPT
 
-  # Streaming
-  - DOMAIN-SUFFIX,netflix.com,📺 Netflix
-  - DOMAIN-SUFFIX,netflix.net,📺 Netflix
-  - DOMAIN-SUFFIX,nflxvideo.net,📺 Netflix
-  - DOMAIN-SUFFIX,bilibili.com,🎬 Bilibili
-  - DOMAIN-SUFFIX,iqiyi.com,China-Media
-  - DOMAIN-SUFFIX,iq.com,China-Media
-  - DOMAIN-SUFFIX,tiktok.com,🎵 TikTok
-  - DOMAIN-SUFFIX,ttwstatic.com,🎵 TikTok
+  # 国内 IP 直连，其余统一代理
+  - GEOIP,CN,DIRECT
+  - MATCH,🤖 ChatGPT
 
-  # Common CN sites to DIRECT
-  - GEOIP,CN,China-Websites
-  - DOMAIN-SUFFIX,zhihu.com,China-Websites
-  - DOMAIN-SUFFIX,zhimg.com,China-Websites
-  - DOMAIN-SUFFIX,qq.com,China-Websites
-  - DOMAIN-SUFFIX,baidu.com,China-Websites
-  - DOMAIN-SUFFIX,163.com,China-Websites
-  - DOMAIN-SUFFIX,alipay.com,China-Websites
-  - DOMAIN-SUFFIX,taobao.com,China-Websites
-  - DOMAIN-SUFFIX,tmall.com,China-Websites
-
-  # Hijacking / ad domains (sample)
-  - DOMAIN-SUFFIX,adsame.com,Hijacking
-  - DOMAIN-SUFFIX,aiclk.com,Hijacking
-
-  # Default
-  - MATCH,Final
