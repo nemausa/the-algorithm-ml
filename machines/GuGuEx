@@ -173,6 +173,12 @@ proxy-groups:
   - REJECT
   - DIRECT
 
+- name: Final
+  type: select
+  proxies:
+  - "🤖 ChatGPT"
+  - DIRECT
+
 rules:
   # 本地与局域网直连
   - DOMAIN,localhost,DIRECT
@@ -248,7 +254,7 @@ rules:
   - DOMAIN-KEYWORD,google,🤖 ChatGPT
   - DOMAIN-KEYWORD,microsoft,🤖 ChatGPT
 
-  # 国内 IP 直连，其余统一代理
+  # 国内 IP 直连，其余由 Final 分组选择
   - GEOIP,CN,DIRECT
-  - MATCH,🤖 ChatGPT
+  - MATCH,Final
 
